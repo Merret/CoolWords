@@ -28,6 +28,18 @@
             animation-iteration-count: infinite;
             animation-duration: 30s;
         }
+        button {
+	        border: none; 
+            display: inline-block; 
+            margin: 1rem 0px; 
+            padding: 0.6rem 0px; 
+            font-size: 1.2rem; 
+            width: 100%; 
+            vertical-align: middle; 
+            overflow: hidden; 
+            text-decoration: none; 
+            white-space: nowrap;
+        }
         @keyframes bgChange {
             0% {background-color: rgba(255,0,0,0.5);}
             33% {background-color: rgba(0,255,0,0.5);}
@@ -41,9 +53,11 @@
         <h1>CoolWords 酷文</h1>
         <p>製作屬於你自己的經典語錄，並以照片或網頁發表吧！</p>
     </div>
-    <div id="loginForm" style="padding: 2rem 0 1rem 0;">
+    <div id="loginForm" style="padding: 4rem 0 4rem 0;">
         <h3>Login and Start</h3>
-        
+        <button class="bgTheme" onclick="choose()">Login</button>
+        <span> OR </sapn>
+        <button onclick="choose(2)">Sign Up</button>
     </div>
     <div class="bgTheme" style="padding: 2rem 0; margin: -2rem; position: relative; left: 0; right: 0; bottom: 0;">
         <h3>Copyright © 2018<a href="https://merret.github.io/CoolWords"> CoolWords 酷文</a></h3>
@@ -53,7 +67,7 @@
         function choose(a=1) {
             if(a==1) {
                 
-            } else {
+            } else if(a==2){
                 
             }
         }
