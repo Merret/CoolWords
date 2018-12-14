@@ -47,21 +47,16 @@
         
     </div>
     <div class="bgTheme" style="padding: 2rem 0; margin: -2rem; position: relative; left: 0; right: 0; bottom: 0;">
-        <h3>Copyright © 2018<a href="https://merret.github.io/CoolWords">CoolWords 酷文</a></h3>
+        <h3>Copyright © 2018<a href="https://merret.github.io/CoolWords"> CoolWords 酷文</a></h3>
     </div>
     <script src="https://cdn.jsdelivr.net/gh/Merret/UsefulJS@0.5.3/js/xhr.js"></script>
     <script>
-        document.getElementById("codeZone").value = "<!DOCTYPE html>\n<html>\n<head>\n<title>My Title<\/title>\n<\/head>\n<body>\n\n<h1>My First Webpage<\/h1>\n<p>My text!<\/p>\n\n<\/body>\n<\/html>";;
-        function buildIt() {
-            var data = {
-                "time": new Date().toJSON(),
-                "data": document.getElementById("codeZone").value
-            };
-            var back = JSON.parse(xhr.post("https://api.myjson.com/bins", JSON.stringify(data)));
-            document.getElementById("pageUrl").innerHTML = "https://merret.github.io/myLand/?id="+back.uri.substr(28);
-            document.getElementById("pageUrl").href = "https://merret.github.io/myLand/?id="+back.uri.substr(28);
-            document.getElementById("pR").innerHTML = "your webpage has been ready for you: ";
-            location.href = "#pR";
+        function choose(a=1) {
+            if(a==1) {
+                
+            } else {
+                
+            }
         }
     </script>
 </body>
