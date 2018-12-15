@@ -1,0 +1,19 @@
+<head>
+<title>登錄中 - CoolWords 酷文</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://cdn.jsdelivr.net/gh/Merret/UsefulJS@0.5.3/js/urldata.min.js"></script>
+</head>
+<body>
+<h2 id="msg"></h2>
+<script>
+    var txt = document.getElementById("msg");
+    txt.innerHTML = encodeURI(urldata("msg"));
+    if(urldata("result")==1) {
+        localStorage.CWlogin = True;
+        location.href = "space";
+    } else {
+        location.href = "./";
+    }
+</script>
+</body>
