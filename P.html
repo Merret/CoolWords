@@ -8,9 +8,9 @@
 <h2 id="msg"></h2>
 <script>
     var txt = document.getElementById("msg");
-    txt.innerHTML = encodeURI(urldata("msg"));
+    txt.innerHTML = decodeURI(urldata("msg"));
     if(urldata("result")==1) {
-        localStorage.CWlogin = True;
+        localStorage.CWlogin = 1;
         location.href = "space";
     } else {
         location.href = "./";
