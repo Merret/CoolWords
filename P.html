@@ -11,6 +11,7 @@
     txt.innerHTML = decodeURI(urldata("msg"));
     if(urldata("result")==1) {
         localStorage.CWlogin = 1;
+        localStorage.CWUN = urldata("UN");
         location.href = "space";
     } else {
         location.href = "./";
