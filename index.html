@@ -41,6 +41,9 @@
             text-decoration: none; 
             white-space: nowrap;
         }
+	br.mBR {
+	    display: none;
+	}
         @keyframes bgChange {
             0% {background-color: rgba(255,0,0,0.5);}
             33% {background-color: rgba(0,255,0,0.5);}
@@ -51,7 +54,7 @@
 	    span {
 		display: block;
             }
-	    button.bgTheme {
+	    br.mBR {
 		display: block;
 	    }
 	}
@@ -66,6 +69,7 @@
         <h3>Login and Start</h3>
         <button class="bgTheme" onclick="choose()">Login</button>
         <span> OR </sapn>
+	<br class="mBR">
         <button class="bgTheme" onclick="choose(2)">Sign Up</button>
     </div>
     <div class="bgTheme" style="padding: 2rem 0; margin: -2rem; position: relative; left: 0; right: 0; bottom: 0;">
